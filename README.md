@@ -7,7 +7,8 @@ The repo contains example values for the variable lists.
 - [Helpers](#helpers)
   - [Strip Units](#strip-units-helper)
   - [Map Helper](#map-helper)
-- [Lists](#lists)
+  - [Responsive Queries](#responsive-queries)
+- [Variable Lists](#lists)
   - [Responsive Breakpoints](#breakpoints-list)
   - [Type Size and Leading](#type-size-and-leading-lists)
 - [Example](#example)
@@ -24,15 +25,25 @@ If the mixin is called and values are not entered, it will default to the `regul
 # Helpers
 ### strip-units helper
 [_strip-units__helper.scss](https://github.com/codeCrit/type-size-mixin/blob/master/_strip-units__helper.scss)  
-
 This allows the mixin to make calculations using unitless numbers
 
 ### map helper
 [_map__helper.scss](https://github.com/codeCrit/type-size-mixin/blob/master/_map__helper.scss)  
-
 Can get values from the next and previous keys when mapping variable lists
 
-# Lists
+### Responsive queries
+[_responsive-query__mixin.scss](https://github.com/codeCrit/type-size-mixin/blob/master/_responsive-query__mixin.scss)  
+This mixin is required for the type-size mixin, but can be used through your styling. It uses the `_responsive-breakpoints__list.scss` values and has 3 options:
+```
+@include respond-above();
+@include respond-below();
+@include respond-at();
+```
+`respond-above` is a min-width query  
+`respond-below` is a max-width query  
+`respond-at` is a min and max-width query
+
+# Variable Lists
 
 ### Breakpoints list
 [_responsive-breakpoints__list.scss](https://github.com/codeCrit/type-size-mixin/blob/master/_responsive-breakpoints__list.scss)  
