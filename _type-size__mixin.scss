@@ -20,11 +20,15 @@ If non-existent variables are used as arguments, the mixin will throw an error.
     // @debug $keyNumber;
 
     $fontSize: nth($keyNumber, 1);
+    $fontSize-number: strip-unit($fontSize);
     $leading: nth($keyNumber, 2);
-    $leading-unitless: calc(#{strip-unit($leading)} / #{strip-unit($fontSize)});
+    $leading-number: strip-unit($leading);
+    $leading-unitless: #{$fontSize-number/$leading-number};
 
     // @debug $fontSize;
+    // @debug $fontSize-number;
     // @debug $leading;
+    // @debug $leading-number;
     // @debug $leading-unitless;
 
     @include respond-above($fs-breakpoint) {

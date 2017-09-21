@@ -10,7 +10,7 @@ If a key is supplied that is not in the $breakpoints list, the mixin will throw 
 
 $small: (
   base: (12px, 18px),
-) !default;
+);
 
 $regular: (
   base: (16px, 24px),
@@ -18,7 +18,7 @@ $regular: (
   medium: (16px, 24px),
   large: (16px, 24px),
   huge: (22px, 30px)
-) !default;
+);
 
 $medium: (
   base: (24px, 30px),
@@ -26,7 +26,7 @@ $medium: (
   medium: (28px, 36px),
   large: (28px, 36px),
   huge: (36px, 42px)
-) !default;
+);
 
 $large: (
   base: (28px, 36px),
@@ -34,7 +34,7 @@ $large: (
   medium: (36px, 42px),
   large: (36px, 42px),
   huge: (40px, 48px)
-) !default;
+);
 
 $huge: (
   base: (48px, 42px),
@@ -42,7 +42,7 @@ $huge: (
   medium: (48px, 54px),
   large: (48px, 60px),
   huge: (52px, 60px)
-) !default;
+);
 
 $massive: (
   base: (42px, 54px),
@@ -50,4 +50,4 @@ $massive: (
   medium: (76px, 84px),
   large: (82px, 90px),
   huge: (82px, 90px)
-) !default;
+);
