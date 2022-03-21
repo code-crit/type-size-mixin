@@ -34,7 +34,7 @@ Can get values from the next and previous keys when mapping variable lists
 ### Responsive queries
 [_responsive-query__mixin.scss](https://github.com/codeCrit/type-size-mixin/blob/master/_responsive-query__mixin.scss)  
 This mixin is required for the type-size mixin, but can be used through your styling. It uses the `_responsive-breakpoints__list.scss` values and has 3 options:
-```
+```scss
 @include respond-above();
 @include respond-below();
 @include respond-at();
