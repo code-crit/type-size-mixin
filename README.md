@@ -14,7 +14,7 @@ The repo contains example values for the variable lists.
 - [Example](#example)
 
 # Usage
-```sass
+```scss
 @include text-size($large);
 ```  
 
@@ -51,7 +51,7 @@ This mixin is required for the type-size mixin, but can be used through your sty
 A list of breakpoints for responsive styling  
 
 For example,
-```sass
+```scss
 $breakpoints: (
   base: 0px,
   small: 512px,
@@ -76,7 +76,7 @@ For example,
 
 The definition of each font-size/leading pair can be different for each media query width.  
 This is an example of a font size with different definitions for each media query width:  
-```sass
+```scss
 $medium: (
   base: (12px, 18px),
   small: (14px, 20px),
@@ -89,7 +89,7 @@ This is generally an unusual situation because it would involve a pretty complic
 
 
 A more common example would be something like this:  
-```sass
+```scss
 $huge: (
   base: (52px, 60px),
   small: (64px, 72px),
@@ -100,7 +100,7 @@ $huge: (
 ```
 
 This definition includes redundant repitition of values, so it can be defined more simply like this:  
-```sass
+```scss
 $huge: (
   base: (52px, 60px),
   small: (64px, 72px),
@@ -110,7 +110,7 @@ $huge: (
 
 # Example
 **Breakpoints**
-```sass
+```scss
 $breakpoints: (
   base: 0px,
   medium: 768px,
@@ -118,7 +118,7 @@ $breakpoints: (
 ) !default;
 ```
 **Font Sizes**
-```sass
+```scss
 $huge: (
   base: (52px, 60px),
   medium: (64px, 72px),
@@ -126,11 +126,11 @@ $huge: (
 ) !default;
 ```
 **Usage**
-```sass
+```scss
 @include text-size($huge);
 ```  
 **Output**
-```sass
+```scss
 @media screen and (min-width: 0px) {
   font-size: 52px;
   line-height: calc(60px/52px);
